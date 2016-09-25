@@ -14,6 +14,7 @@ Package.onUse(function (api) {
   api.use('underscore'); // only the subset in microscore.js
   api.use('observe-sequence');
   api.use('reactive-var');
+  api.use('ecmascript');
 
   api.export([
     'Blaze',
