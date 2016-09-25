@@ -15,7 +15,7 @@ var INPUT = HTML.INPUT;
 
 var materialize = function (content, parent) {
   var func = content;
-  if (typeof content !== 'function') {
+  if (Blaze.isTemplate(content) || typeof content !== 'function') {
     func = function () {
       return content;
     };
